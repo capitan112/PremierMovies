@@ -6,6 +6,7 @@ struct PremierMoviesApp: App {
         WindowGroup {
             NavigationStack {
                 MoviesView()
+                    .background(KeyboardWarmUpView().frame(width: 0, height: 0))
             }
         }
     }
